@@ -55,3 +55,50 @@ for (let i = words.length - 1; i >= 0; i--) {
 }
 const rev_statement = revWords.join(" ");
 console.log(rev_statement);
+// Task 5
+// Copy the given array into another array so that changing the copy does not affect the original.Change the first element of the copied array to 99.
+
+// Input: [1, 2, 3]
+
+// Expected Output:
+
+// Original: [1, 2, 3] Copy: [99, 2, 3]
+const numbers1 = [1, 2, 3];
+console.log("Original Array:", numbers1);
+const copyNumbers = [...numbers1];
+copyNumbers[0] = 99;
+console.log("Coppy Array", copyNumbers);
+// Given an array of student objects, print each student’s name and marks.
+const students = [
+  { name: "John", marks: 85 },
+  { name: "Alice", marks: 90 },
+];
+for (const student of students) {
+  const studentName = student.name;
+  const studentMark = student.marks;
+  console.log("Name:", studentName, "Marks", studentMark);
+}
+// Task 7
+// Given a 2D array, update the value at second row first item to 99 and print the updated array.
+
+// input:
+
+// [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6]
+// ]
+// Expected Array:
+
+// [
+//   [1, 2],
+//   [99, 4],
+//   [5, 6]
+// ]
+const numbersOfArray = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+numbersOfArray[1][0] = 99;
+console.log(numbersOfArray);
