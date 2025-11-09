@@ -71,3 +71,12 @@ function findLongestWord(string) {
 const string = "I am learning Programming to become a programmer";
 const output4 = findLongestWord(string);
 console.log(output4);
+// Task-5:
+// Generate a random number between 10 to 20.
+function generateRandomNumber() {
+  const random = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+  return random;
+}
+
+const output5 = generateRandomNumber();
+console.log(output5);
