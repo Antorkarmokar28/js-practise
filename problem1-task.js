@@ -50,3 +50,24 @@ function findVowel(string) {
 const vowelString = "Hello";
 const output3 = findVowel(vowelString);
 console.log(output3);
+// Task-4:
+// Write a function to find the longest word in a given string.
+
+// sample-input: I am learning Programming to become a programmer
+
+// sample-output: Programming
+
+function findLongestWord(string) {
+  const words = string.split(" ");
+  let longest = "";
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    if (word.length > longest.length) {
+      longest = word;
+    }
+  }
+  return longest;
+}
+const string = "I am learning Programming to become a programmer";
+const output4 = findLongestWord(string);
+console.log(output4);
