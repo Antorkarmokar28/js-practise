@@ -35,3 +35,18 @@ const numbers2 = [5, 6, 11, 12, 98, 5];
 const output1 = duplicateFind(numbers, 5);
 const output2 = duplicateFind(numbers2, 25);
 console.log(output1, output2);
+// Task-3:
+// Write a function to count the number of vowels in a string.
+function findVowel(string) {
+  const vowels = ["a", "e", "i", "o", "u"];
+  let count = 0;
+  for (const char of string.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+const vowelString = "Hello";
+const output3 = findVowel(vowelString);
+console.log(output3);
