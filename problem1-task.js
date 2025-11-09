@@ -5,3 +5,33 @@ function temperatureToFarenheit(celsius) {
 }
 const output = temperatureToFarenheit(35);
 console.log(output);
+// Task-2:
+// You are given an array of numbers. Count how many times the a number is repeated in the array.
+
+// sample-input: numbers = [5,6,11,12,98, 5]
+
+// find: 5
+
+// output: 2
+
+// sample-input:
+
+// numbers = [5,6,11,12,98, 5]
+
+// find: 25
+
+// output: 0
+function duplicateFind(numbers, finNumber) {
+  let count = 0;
+  for (const num of numbers) {
+    if (num === finNumber) {
+      count++;
+    }
+  }
+  return count;
+}
+const numbers = [5, 6, 11, 12, 98, 5];
+const numbers2 = [5, 6, 11, 12, 98, 5];
+const output1 = duplicateFind(numbers, 5);
+const output2 = duplicateFind(numbers2, 25);
+console.log(output1, output2);
