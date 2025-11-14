@@ -1,0 +1,9 @@
+.container{
+    width: 1140px;
+    margin: 0px auto;
+}
+.container .p-style{
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 10px;
+}
