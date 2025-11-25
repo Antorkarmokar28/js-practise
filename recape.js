@@ -1,0 +1,11 @@
+const numbers = [4, 10, 9, 20, 55, 101];
+
+let i = 0;
+let maxNumber = 0;
+while (i < numbers.length) {
+  if (maxNumber > numbers[i]) {
+    maxNumber = numbers[i];
+  }
+  i++;
+}
+console.log(maxNumber);
