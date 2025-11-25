@@ -19,3 +19,7 @@ for (let i = 0; i < friends.length; i++) {
   }
 }
 console.log(bigName);
+
+const price = [10, 20, 30, 45];
+const last = price.slice(-1)[0];
+console.log(last);
